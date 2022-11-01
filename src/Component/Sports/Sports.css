@@ -1,0 +1,13 @@
+.sports-container{
+    display: grid;
+    grid-template-columns: repeat(3,0.1fr);
+    padding: 50px 3px 10px 50px;
+    background-color: rgb(205, 229, 250);
+}
+.sports-name{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}

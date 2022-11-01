@@ -1,0 +1,12 @@
+.header img{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.header{
+display: flex;
+padding: 10px;
+color: rgb(126, 10, 235);
+}
