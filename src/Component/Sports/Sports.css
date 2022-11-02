@@ -11,3 +11,50 @@
     font-size: 21px;
     line-height: 25px;
 }
+.cart-container{
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+.container{
+display: grid;
+grid-template-columns: 4fr 1fr;
+}
+.second{
+    display:flex;
+}
+.third{
+border: 1px solid wheat;
+border-radius: 10px;
+padding-left: 10px;
+background-color: gainsboro;
+}
+.container-1{
+    display: flex;
+    gap:20px;
+}
+.container-2{
+    display: flex;
+    gap: 55px;
+    margin-top: -25px;
+}
+.container-3{
+    display: flex;
+    background-color: gainsboro;
+    gap:28px;
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.container-4,.container-5,.container-6,.container-7,.container-8{
+    border-radius: 70px;
+    background-color: whitesmoke;
+    padding: 14px;
+}
+.container-9{
+    border:none;
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 6px;
+}
