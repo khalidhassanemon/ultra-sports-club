@@ -5,11 +5,21 @@ import Product from '../Product/Product';
 import './Sports.css'
 const Sports = () => {
     const [cart,setCart]=useState([]);
+
+    const [time,setTime]=useState([]);
+
     useEffect(()=>{
        fetch('products.json')
        .then(res=>res.json())
        .then(data=>setCart(data));
     },[])
+
+    const handleAddToCart=(product)=>{
+      console.log(product);
+      // cart.push(product);
+      const newTime=[...time,product];
+      setTime(newTime);
+     }
     return (
         <div className='container'>
             <div>
@@ -19,6 +29,7 @@ const Sports = () => {
             cart.map(product=><Product 
                 key={cart._id}
                 product={product}
+                handleAddToCart={handleAddToCart}
                 ></Product>)
            }
           </div>
@@ -58,13 +69,17 @@ const Sports = () => {
          </div>
 
          <h2 style={{marginTop:'40px'}}>Exercise Details</h2>
+          
+          
 
-         <div className='container-9'>
-            <label>Exercise time : </label>
-            <input type={"text"}></input>
+          <div className='container-9'>
+            <label style={{fontSize:'15px',fontWeight:'bold'}}>Exercise time :{time.length}</label>
           </div>
 
-
+         <div className='container-10'>
+         <label style={{fontSize:'15px',fontWeight:'bold',marginLeft:'15px'}}>Break time : </label>
+         </div>  
+         <button id='last'>Activity Completed</button>  
           </div>
         </div>
     );

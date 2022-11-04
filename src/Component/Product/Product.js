@@ -1,7 +1,7 @@
 import React from 'react';
 import './Product.css'
-const Product = (props) => {
-   const {name,img,age,Time,description}=props.product;
+const Product = ({product,handleAddToCart}) => {
+   const {name,img,age,Time,description}=product;
     return (
         <div className='sports-info'>
         <div className='sports-activity'>
@@ -10,7 +10,7 @@ const Product = (props) => {
             <p>{description}</p>
              <p>For Age:{age}</p>
              <p>Time-required:{Time}</p>
-             <button>
+             <button onClick={()=>handleAddToCart(product)}>
             <p>Add to List</p>
             </button>
         </div>

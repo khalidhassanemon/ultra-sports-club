@@ -57,4 +57,23 @@ background-color: gainsboro;
     background-color: gainsboro;
     padding: 20px;
     border-radius: 6px;
+    margin-bottom: 8px;
+}
+.container-10{
+    border:none;
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 6px;
+}
+#last{
+    border:1px solid gray;
+    padding:10px;
+    border-radius:4px;
+    margin-top:20px;
+    margin-left:5px;
+    height: 40px;
+    width: 340px;
+    background-color:rgb(253, 29, 253);
+    font-size:medium;
+    font-weight:bold;
 }
