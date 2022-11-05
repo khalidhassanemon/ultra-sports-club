@@ -76,4 +76,14 @@ background-color: gainsboro;
     background-color:rgb(253, 29, 253);
     font-size:medium;
     font-weight:bold;
+    margin-bottom: 20px;
+}
+.blog{
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    margin-left: 150px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(253, 29, 253);
 }

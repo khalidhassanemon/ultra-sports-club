@@ -88,7 +88,7 @@ const Sports = () => {
          <Time num={num}></Time></label>
          </div>  
          <button id='last'>Activity Completed</button> 
-         <a href='https://khalidhassanemon.github.io/index/'>Blog</a> 
+         <a href='https://khalidhassanemon.github.io/index/'target="_blank" className='blog' >Blog</a> 
           </div>
         </div>
     );
