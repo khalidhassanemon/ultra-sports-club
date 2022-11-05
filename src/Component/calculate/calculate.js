@@ -10,7 +10,7 @@ const calculate = ({cart}) => {
 
     return (
         <div className='container-12'>
-             <div>: {totalTime}</div> 
+             <div>: {totalTime}s</div> 
         </div>
     );
 };
