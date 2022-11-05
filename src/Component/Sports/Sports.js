@@ -75,7 +75,7 @@ const Sports = () => {
           
 
           <div className='container-9'>
-          <label style={{fontSize:'15px',fontWeight:'bold'}}>Exercise time :<Calculate cart={cart}></Calculate></label>
+          <label style={{fontSize:'15px',fontWeight:'bold'}}>Exercise time <Calculate cart={cart}></Calculate></label>
           </div>
 
          <div className='container-10'>
