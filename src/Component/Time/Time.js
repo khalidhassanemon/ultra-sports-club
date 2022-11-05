@@ -5,7 +5,7 @@ const Time = (props) => {
     return (
         <div className='time'>
           
-                <p1>{props.num}s</p1>
+                <p>{props.num}s</p>
                      
         </div>
     );
