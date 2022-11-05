@@ -1,24 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee,faLocation } from '@fortawesome/free-solid-svg-icons';
+import {faLocation } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
+import Calculate from '../calculate/calculate';
 import Product from '../Product/Product';
 import './Sports.css'
 const Sports = () => {
-    const [cart,setCart]=useState([]);
+    const [products,setProducts]=useState([]);
 
-    const [time,setTime]=useState([]);
+    const [cart,setCart]=useState([]);
 
     useEffect(()=>{
        fetch('products.json')
        .then(res=>res.json())
-       .then(data=>setCart(data));
+       .then(data=>setProducts(data));
     },[])
 
     const handleAddToCart=(product)=>{
-      console.log(product);
+      // console.log(product);
       // cart.push(product);
-      const newTime=[...time,product];
-      setTime(newTime);
+      const newCart=[...cart,product];
+      setCart(newCart);
      }
     return (
         <div className='container'>
@@ -26,8 +27,8 @@ const Sports = () => {
             <h1 style={{marginLeft:"20px",marginBottom:"-7px"}}>Select today’s exercise</h1> 
           <div className='sports-container'>
            {
-            cart.map(product=><Product 
-                key={cart._id}
+            products.map(product=><Product 
+                key={product._id}
                 product={product}
                 handleAddToCart={handleAddToCart}
                 ></Product>)
@@ -36,6 +37,7 @@ const Sports = () => {
             </div>
       
           <div className='cart-container'>
+       
             <div>
             <h4>Khalid Emon</h4>
              <div className='second'>
@@ -73,7 +75,7 @@ const Sports = () => {
           
 
           <div className='container-9'>
-            <label style={{fontSize:'15px',fontWeight:'bold'}}>Exercise time :{time.length}</label>
+          <label style={{fontSize:'15px',fontWeight:'bold'}}>Exercise time :<Calculate cart={cart}></Calculate></label>
           </div>
 
          <div className='container-10'>

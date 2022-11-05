@@ -1,6 +1,7 @@
 import React from 'react';
 import './Product.css'
-const Product = ({product,handleAddToCart}) => {
+const Product = ({handleAddToCart,product}) => {
+
    const {name,img,age,Time,description}=product;
     return (
         <div className='sports-info'>
