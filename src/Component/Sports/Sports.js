@@ -87,7 +87,8 @@ const Sports = () => {
          <label style={{fontSize:'15px',fontWeight:'bold',marginLeft:'15px'}}>Break time :
          <Time num={num}></Time></label>
          </div>  
-         <button id='last'>Activity Completed</button>  
+         <button id='last'>Activity Completed</button> 
+         <a href='https://khalidhassanemon.github.io/index/'>Blog</a> 
           </div>
         </div>
     );
