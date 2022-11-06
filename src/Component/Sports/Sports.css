@@ -92,3 +92,8 @@ background-color: gainsboro;
     grid-template-columns: repeat(2, 1fr);
 }
 }
+@media screen and (max-width:700px){
+    .sports-container{
+        grid-template-columns: repeat(1, 2fr);
+    }
+    }
